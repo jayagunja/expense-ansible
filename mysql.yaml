@@ -24,6 +24,7 @@
       login_password: ExpenseApp@1
       login_host: mysql.daws82s.fun
     register: mysql_info
+    ignore_errors: true
 
   - name: print the mysql output
     ansible.builtin.debug:
