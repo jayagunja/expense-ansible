@@ -61,7 +61,18 @@
       login_user: root
       login_password: ExpenseApp@1
       login_host: mysql.daws82s.fun
-      target: /app/schema/backend.sql     
+      target: /app/schema/backend.sql
+
+  - name: demon reload and start backend service
+    ansible.builtin.systemd_service:
+      name: backend
+      enabled: true
+      daemon_reload: true
+      state: resarted
+ 
+
+
+
 
 
 
