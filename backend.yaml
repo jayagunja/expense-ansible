@@ -15,7 +15,6 @@
     loop:
     - nodejs
     - mysql
-    - cryptography
 
   - name: Install python lib
     ansible.builtin.pip:
