@@ -20,7 +20,7 @@
   - name: create app directory
     ansible.builtin.file:
       name: /app
-      path: directory
+      state: directory
 
   - name: download the backend application code
     ansible.builtin.get_url:
@@ -32,7 +32,7 @@
       src: /tmp/backend.zip
       dest: /app
 
-      
+
 
 
 
