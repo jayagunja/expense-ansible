@@ -16,6 +16,11 @@
     - nodejs
     - mysql
 
+  name: Install python
+  ansible.builtin.pip:
+    name: PyMySQL
+    executable: pip3.9
+  
   - name: create ansible user
     ansible.builtin.user:
       name: expense
@@ -45,6 +50,7 @@
       src: backend.service
       dest: /etc/systemd/system/backend.service
 
+      
   - name: import mysql data
     community.mysql.mysql_db:
       state: import
