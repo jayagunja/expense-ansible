@@ -16,7 +16,7 @@
     - nodejs
     - mysql
 
-  - name: Install python
+  - name: Install python lib
     ansible.builtin.pip:
       name: PyMySQL
       executable: pip3.9
