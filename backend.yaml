@@ -16,10 +16,13 @@
     - nodejs
     - mysql
 
-  - name: Install python lib
+  - name: Install lib
     ansible.builtin.pip:
-      name: PyMySQL
+      name: "{{ item }}"
       executable: pip3.9
+    loop:
+    - PyMySQL
+    - cryptography
   
   - name: create ansible user
     ansible.builtin.user:
