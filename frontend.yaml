@@ -10,9 +10,9 @@
   - name: start and reload nginx
     ansible.builtin.service:
       name: nginx
-      enabled: yes
       state: started
-
+      enabled: yes
+    
   - name: delete html directory
     ansible.builtin.file:
       path: /usr/share/nginx/html
