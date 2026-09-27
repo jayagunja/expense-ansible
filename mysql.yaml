@@ -22,7 +22,7 @@
     community.mysql.mysql_info:
       login_user: root
       login_password: ExpenseApp@1
-      login_host: mysql.daws82s.fun
+      login_host: mysql.daws82s.store
     register: mysql_info
     ignore_errors: true
 
