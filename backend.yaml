@@ -60,7 +60,7 @@
       name: all
       login_user: root
       login_password: ExpenseApp@1
-      login_host: mysql.daws82s.fun
+      login_host: mysql.daws82s.store
       target: /app/schema/backend.sql
 
   - name: demon reload and restart backend service
